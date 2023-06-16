@@ -17,3 +17,5 @@ include:
     shield: fma_left
   - board: nice_nano_v2
     shield: fma_right
+  - board: nice_nano_v2
+    shield: settings_reset
