@@ -1,13 +1,7 @@
-config ZMK_BLE
-    default y
-
-config ZMK_USB
-    default y
-
 if SHIELD_FMA_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "FMA Keyboard"
+    default "FMA-Keyboard"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
