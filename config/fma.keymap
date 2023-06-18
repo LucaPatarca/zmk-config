@@ -21,14 +21,14 @@
     combos {
         compatible = "zmk,combos";
 
-        new_combo {
+        bootloader_left {
             bindings = <&bootloader>;
             key-positions = <31 4>;
         };
 
-        new_combo {
-            bindings = <&bootloader>;
-            key-positions = <32 5>;
+        bootloader_right {
+            bindings = <&trans>;
+            key-positions = <>;
         };
     };
 
