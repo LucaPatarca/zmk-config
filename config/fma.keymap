@@ -18,6 +18,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        new_combo {
+            bindings = <&bootloader>;
+            key-positions = <31 4>;
+        };
+
+        new_combo {
+            bindings = <&bootloader>;
+            key-positions = <32 5>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -32,28 +46,28 @@
 
         left_layer {
             bindings = <
-     &kp TILDE  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS   &kp AMPS       &kp CARET       &kp RPAR  &kp RIGHT_BRACKET  &kp RIGHT_BRACE      &kp SEMICOLON
-      &kp EXCL          &kp AT          &kp HASH              &kp DLLR  &kp PRCNT       &kp ASTRK  &kp BACKSPACE          &kp EQUAL         &kp BSLH   &kp SINGLE_QUOTE
-&sk LEFT_SHIFT       &sk LCTRL      &sk LEFT_ALT          &sk LEFT_GUI     &trans  &kp UNDERSCORE      &kp MINUS           &kp PLUS         &kp PIPE  &kp DOUBLE_QUOTES
-                                                                 &to 0    &kp TAB           &to 3          &to 2
+     &kp TILDE  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS      &kp AMPS       &kp CARET       &kp RPAR  &kp RIGHT_BRACKET  &kp RIGHT_BRACE      &kp SEMICOLON
+      &kp EXCL          &kp AT          &kp HASH              &kp DLLR     &kp PRCNT       &kp ASTRK  &kp BACKSPACE          &kp EQUAL         &kp BSLH   &kp SINGLE_QUOTE
+&sk LEFT_SHIFT       &sk LCTRL      &sk LEFT_ALT          &sk LEFT_GUI  &kp QUESTION  &kp UNDERSCORE      &kp MINUS           &kp PLUS         &kp PIPE  &kp DOUBLE_QUOTES
+                                                                 &to 0       &kp TAB           &to 3          &to 2
             >;
         };
 
         right_layer {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3        &trans        &kp HOME       &kp PG_DN     &kp PG_UP          &kp END  &kp DELETE
-&trans  &kp N4  &kp N5  &kp N6        &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &trans
-&trans  &kp N7  &kp N8  &kp N9        &kp N0          &trans          &trans        &trans           &trans      &trans
+&trans  &kp N1  &kp N2  &kp N3        &trans        &kp HOME       &kp PG_DN      &kp PG_UP           &kp END  &kp DELETE
+&trans  &kp N4  &kp N5  &kp N6        &trans  &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW   &kp RIGHT_ARROW      &trans
+&trans  &kp N7  &kp N8  &kp N9        &kp N0          &trans          &trans  &kp LESS_THAN  &kp GREATER_THAN      &trans
                          &to 0  &kp LEFT_GUI          &trans          &trans
             >;
         };
 
         tri_layer {
             bindings = <
-    &sys_reset  &trans    &kp C_VOLUME_UP  &kp C_BRI_UP  &bt BT_SEL 0  &trans  &trans  &trans  &trans   &sys_reset
-   &bootloader  &trans  &kp C_VOLUME_DOWN  &kp C_BRI_DN  &bt BT_SEL 1  &trans  &trans  &trans  &trans  &bootloader
-&kp LEFT_SHIFT  &trans         &kp K_MUTE    &bt BT_CLR  &bt BT_SEL 2  &trans  &trans  &trans  &trans       &trans
-                                                  &to 0        &trans  &trans  &trans
+     &kp RA(X)  &trans    &kp C_VOLUME_UP  &kp C_BRI_UP  &bt BT_SEL 0  &trans  &kp RA(J)  &kp RA(H)     &trans          &trans
+     &kp RA(Z)  &trans  &kp C_VOLUME_DOWN  &kp C_BRI_DN  &bt BT_SEL 1  &trans     &trans  &kp RA(F)  &kp RA(V)   &kp RA(COMMA)
+&kp LEFT_SHIFT  &trans         &kp K_MUTE    &bt BT_CLR  &bt BT_SEL 2  &trans     &trans  &kp RA(G)  &kp RA(B)  &kp RA(PERIOD)
+                                                  &to 0        &trans  &trans     &trans
             >;
         };
     };
