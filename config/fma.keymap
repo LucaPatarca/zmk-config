@@ -45,46 +45,46 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp F      &kp P                &kp B                 &kp J  &kp L      &kp U    &kp Y  &kp SEMICOLON
-&kp A  &kp R  &kp S      &kp T                &kp G                 &kp M  &kp N      &kp E    &kp I          &kp O
-&kp Z  &kp X  &kp C      &kp D                &kp V                 &kp K  &kp H  &kp COMMA  &kp DOT       &kp FSLH
+&kp Q  &kp W  &kp F  &kp P      &kp B                &kp J                 &kp L  &kp U      &kp Y    &kp SEMICOLON
+&kp A  &kp R  &kp S  &kp T      &kp G                &kp M                 &kp N  &kp E      &kp I    &kp O
+&kp Z  &kp X  &kp C  &kp D      &kp V                &kp K                 &kp H  &kp COMMA  &kp DOT  &kp FSLH
                      &kp SPACE  &ht LEFT_GUI ESCAPE  &ht LEFT_SHIFT ENTER  &to 1
             >;
         };
 
         left_layer {
             bindings = <
-  &kp AMPERSAND     &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN       &kp RPAR  &kp RIGHT_BRACKET  &kp RIGHT_BRACE          &kp COLON
-       &kp EXCL             &kp AT          &kp HASH              &kp DLLR      &kp PRCNT         &kp ASTRK  &kp BACKSPACE          &kp EQUAL         &kp BSLH   &kp SINGLE_QUOTE
-&skl LEFT_SHIFT  &skl LEFT_CONTROL     &skl LEFT_ALT         &skl LEFT_GUI   &kp QUESTION    &kp UNDERSCORE      &kp MINUS           &kp PLUS         &kp PIPE  &kp DOUBLE_QUOTES
-                                                                     &to 0        &kp TAB             &to 3          &to 2
+&kp AMPERSAND    &kp LEFT_BRACE     &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN  &kp RPAR       &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp COLON
+&kp EXCL         &kp AT             &kp HASH          &kp DLLR              &kp PRCNT      &kp ASTRK         &kp BACKSPACE  &kp EQUAL          &kp BSLH         &kp SINGLE_QUOTE
+&skl LEFT_SHIFT  &skl LEFT_CONTROL  &skl LEFT_ALT     &skl LEFT_GUI         &kp QUESTION   &kp UNDERSCORE    &kp MINUS      &kp PLUS           &kp PIPE         &kp DOUBLE_QUOTES
+                                                      &to 0                 &kp TAB        &to 3             &to 2
             >;
         };
 
         right_layer {
             bindings = <
-&kp ASTERISK  &kp N1  &kp N2  &kp N3          &kp PLUS        &kp HOME       &kp PG_DN     &kp PG_UP          &kp END  &kp DELETE
-   &kp SLASH  &kp N4  &kp N5  &kp N6         &kp MINUS  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &trans
-      &trans  &kp N7  &kp N8  &kp N9            &kp N0       &kp TILDE       &kp CARET        &trans       &kp PERIOD      &trans
-                               &to 0  &ht LEFT_GUI TAB       &kp ENTER          &trans
+&kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp PLUS          &kp HOME        &kp PG_DN       &kp PG_UP     &kp END          &kp DELETE
+&kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp GRAVE
+&trans        &kp N7  &kp N8  &kp N9  &kp N0            &kp TILDE       &kp CARET       &trans        &kp PERIOD       &trans
+                              &to 0   &ht LEFT_GUI TAB  &kp ENTER       &trans
             >;
         };
 
         tri_layer {
             bindings = <
- &kp RA(X)      &trans    &kp C_VOLUME_UP  &bl BL_INC    &kp K_CUT          &trans  &kp RA(J)  &kp RA(H)     &trans          &trans
- &kp RA(Z)      &trans  &kp C_VOLUME_DOWN  &bl BL_DEC   &kp K_COPY          &trans     &trans  &kp RA(F)  &kp RA(V)   &kp RA(COMMA)
-&kp K_UNDO  &kp K_REDO         &kp K_MUTE      &trans  &kp K_PASTE          &trans     &trans  &kp RA(G)  &kp RA(B)  &kp RA(PERIOD)
-                                                &to 0       &trans  &kp LEFT_SHIFT     &trans
+&kp RA(X)   &trans      &kp C_VOLUME_UP    &bl BL_INC  &kp K_CUT    &trans          &kp RA(J)  &kp RA(H)  &trans     &trans
+&kp RA(Z)   &trans      &kp C_VOLUME_DOWN  &bl BL_DEC  &kp K_COPY   &trans          &trans     &kp RA(F)  &kp RA(V)  &kp RA(COMMA)
+&kp K_UNDO  &kp K_REDO  &kp K_MUTE         &trans      &kp K_PASTE  &trans          &trans     &kp RA(G)  &kp RA(B)  &kp RA(PERIOD)
+                                           &to 0       &trans       &kp LEFT_SHIFT  &trans
             >;
         };
 
         layer_4 {
             bindings = <
-&bootloader  &trans  &trans      &trans  &bt BT_SEL 0  &trans  &trans  &trans  &trans  &bootloader
- &sys_reset  &trans  &trans      &trans  &bt BT_SEL 1  &trans  &trans  &trans  &trans   &sys_reset
-     &trans  &trans  &trans  &bt BT_CLR  &bt BT_SEL 2  &trans  &trans  &trans  &trans       &trans
-                                  &to 0        &trans  &trans  &trans
+&bootloader  &trans  &trans  &trans      &bt BT_SEL 0  &trans  &trans  &trans  &trans  &bootloader
+&sys_reset   &trans  &trans  &trans      &bt BT_SEL 1  &trans  &trans  &trans  &trans  &sys_reset
+&trans       &trans  &trans  &bt BT_CLR  &bt BT_SEL 2  &trans  &trans  &trans  &trans  &trans
+                             &to 0       &trans        &trans  &trans
             >;
         };
     };
